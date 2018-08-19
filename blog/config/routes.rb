@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'posts/create'
   get 'posts/:id' => 'posts#show'
   get 'posts/:id/edit' => 'posts#edit'
+  patch 'posts/:id' => 'posts#update'
 
   get 'test/index'
   get 'test/rename'
