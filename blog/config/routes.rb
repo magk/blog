@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   post 'posts/create'
 
   get 'test/index'
+  get 'test/rename'
   get 'welcome/added'
 
   resources :articles
