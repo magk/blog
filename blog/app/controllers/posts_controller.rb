@@ -15,4 +15,12 @@ class PostsController < ApplicationController
   def edit
 	@post = Post.find(params[:id])
   end
+  
+  def update
+	@post = Post.find(params[:id])
+	
+	if @post.update(params.require(:post).permit(:title,:content))
+		render plain: 'success'
+	end
+  end
 end
