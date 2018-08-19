@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'posts/new'
+
   get 'test/index'
+  get 'welcome/added'
 
   resources :articles
   root 'welcome#index'
